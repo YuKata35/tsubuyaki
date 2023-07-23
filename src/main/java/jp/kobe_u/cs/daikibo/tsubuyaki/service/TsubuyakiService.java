@@ -34,6 +34,10 @@ public class TsubuyakiService {
         return list;
     }
 
+    public List<Tsubuyaki> searchTsubuyaki(String keyword) {
+        return repo.findByCommentContaining(keyword);
+    }
+
   
 }
 
