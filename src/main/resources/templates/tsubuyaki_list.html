@@ -19,6 +19,12 @@
         <input type="text" required th:field="*{comment}" />
         <input type="submit" value="つぶやく" />
     </form>
+    <h2>検索する</h2>
+    <form action="/search" method="post">
+        <label for="keyword">キーワード:</label>
+        <input id="keyword" type="text" required="" name="keyword">
+        <input type="submit" value="検索する">
+    </form>
     <h2>タイトルへ</h2>
     <a th:href="@{/}">戻る</a>
 </body>
